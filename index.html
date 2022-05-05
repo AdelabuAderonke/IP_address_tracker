@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body id="body">
+  <div class="container">
+    <div class="first_div">
+      <h2>IP Address Tracker</h2>
+      <div class="input_div">
+        <input type="text" id="input_val" placeholder="Search for any IP address or domain">
+        <input type="button" id = "input_arrow">
+      </div>
+      <div class="display">
+        <div class="address border_line">
+          <p>IP ADDRESS</p>
+          <span id="address_val" class="bold"></span>
+        </div>
+        <div class="location border_line">
+          <p>LOCATION</p>
+          <span id="location_val" class="bold"></span>
+        </div>
+        <div class="time_zone border_line">
+          <p>TIMEZONE</p>
+          <span id="time_val" class="bold"></span>
+
+        </div>
+        <div class="isp border_line">
+          <p>ISP</p>
+          <span id="isp_val" class="bold"></span>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div id="map"></div>
+     
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Adelabu Aderonke</a>.
+  </div>
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+  <script src="script.js"></script>
+</body>
+</html>
